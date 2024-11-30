@@ -1,7 +1,7 @@
 import 'package:movie_app_with_clean_architcture/movies/domain/entities/movie.dart';
 
-class MoviesModel extends Movie {
-  const MoviesModel({
+class MovieModel extends Movie {
+  const MovieModel({
     required super.id,
     required super.title,
     required super.backdropPath,
@@ -11,8 +11,8 @@ class MoviesModel extends Movie {
     required super.releaseDate,
   });
 
-  factory MoviesModel.fromJson(Map<String, dynamic> json) {
-    return MoviesModel(
+  factory MovieModel.fromJson(Map<String, dynamic> json) {
+    return MovieModel(
       id: json['id'],
       title: json['title'],
       backdropPath: json['backdrop_path'],
